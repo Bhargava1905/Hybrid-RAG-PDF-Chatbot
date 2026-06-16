@@ -40,9 +40,38 @@ User Query
 → Llama 3
 → Answer with Citations
 
+## Installation
+
+git clone https://github.com/Bhargava1905/Hybrid-RAG-PDF-Chatbot.git
+
+cd Hybrid-RAG-PDF-Chatbot
+
+pip install -r requirements.txt
+
+## Run Llama 3 Locally
+
+Install Ollama and pull the model:
+
+ollama pull llama3
+
+## Usage
+
+streamlit run app.py
+
+## Key Highlights
+
+- Implemented Hybrid Retrieval using FAISS and BM25
+- Applied Reciprocal Rank Fusion (RRF) for result aggregation
+- Built Multi-Query Retrieval to improve context recall
+- Added Query Rewriting for conversational follow-up questions
+- Implemented document-level filtering and citation tracking
+- Developed an end-to-end local RAG pipeline using Llama 3 and Ollama
+
 ## Future Improvements
 
-* Cross Encoder Re-ranking
-* Evaluation Framework
-* Cloud Deployment
-* Advanced Metadata Filtering
+- Cross-Encoder Re-ranking
+- Retrieval Evaluation Framework (Precision@K, Recall@K)
+- Cloud Deployment (AWS/GCP)
+- Advanced Metadata Filtering
+- Parent-Child Retrieval
+- Hybrid Search Weight Optimization
