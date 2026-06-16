@@ -1,0 +1,12 @@
+venv/
+.venv/
+**/__pycache__/
+*.pyc
+
+vectorstore/
+data/
+
+.vscode/
+
+.DS_Store
+.env
