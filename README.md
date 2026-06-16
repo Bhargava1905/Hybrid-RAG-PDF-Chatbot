@@ -1,6 +1,8 @@
 # Hybrid RAG PDF Chatbot
 
-A Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and chat with them using a local LLM.
+A Retrieval-Augmented Generation (RAG) application that allows users to upload PDF documents and interact with them through natural language conversations.
+
+The system combines semantic search (FAISS) and keyword search (BM25) using Reciprocal Rank Fusion (RRF), along with query rewriting and multi-query retrieval to improve retrieval quality and answer grounding.
 
 ## Features
 
